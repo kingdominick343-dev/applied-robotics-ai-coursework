@@ -1,0 +1,30 @@
+ASSIGNMENT 1 - GIT WORKFLOW DISCUSSION
+Applied Robotics and AI Project
+
+Repository: https://github.com/kingdominick343-dev/applied-robotics-ai-coursework
+
+Git tracks changes locally. GitHub hosts a remote copy for sharing and backup.
+
+ADD
+The command git add selects the current contents of files for the next commit by placing them in Git's staging area. It does not create a commit or upload anything. For example: git add practice.txt
+If you edit the file again after staging it, run git add again to include the newer changes.
+
+COMMIT
+The command git commit records the staged snapshot in local repository history with an explanatory message. For example: git commit -m "Add Git practice notes"
+A commit remains local until it is pushed. Unstaged changes are not automatically included.
+
+PUSH
+The command git push sends local commits to a remote repository and updates the corresponding remote branch when permitted. For a new branch: git push -u origin coursework/git-practice
+Later pushes on that branch can use git push. Pushing does not automatically include uncommitted file edits.
+
+KEY DIFFERENCE
+Add prepares selected changes. Commit saves them in local history. Push shares committed history with the remote repository. The normal sequence is edit, save, add, commit, then push.
+
+CLONE AND EDIT
+The command git clone downloads a repository and its history into a new local working directory and configures the remote named origin. Editing a file changes the working directory; use git diff to inspect changes, then stage, commit and push them.
+
+BRANCHING
+The command git switch -c coursework/git-practice creates and switches to a branch. A branch allows changes to be developed separately from main. After pushing the branch, a pull request can be used to review and merge the changes. Use git switch main and git pull --ff-only to synchronize the local main branch afterward.
+
+EVIDENCE
+These explanations and commands are guidance, not proof that a terminal demonstration has been completed. Show the real commands and results in the assignment video and maintain genuine dated activity over time.
